@@ -13,5 +13,5 @@ To use the PES Survey Form, follow these steps:
 ```
 git clone https://github.com/Darsh1907/PES-Survey-Form.git
 ```
-3. Open the `index.html` file in your preferred web browser.
+2. Open the `index.html` file in your preferred web browser.
 That's it! You should now be able to view and interact with the survey form.
