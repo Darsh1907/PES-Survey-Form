@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <title>PES Survey Form</title>
+  <link rel="icon" href="pesu_icon.ico" type="icon type">
+  <link rel="stylesheet" href="assignment_stylesheet.css">
+</head>
+
+<body style="background-color: rgb(192, 145, 145);">
+
+  <script>
+    function condi() {
+      var check = document.forms["form1"]["myname"].value;
+      if (check == "") {
+        alert("Please input a Value");
+        return false;
+      }
+      else {
+        alert("Submited Successfully!");
+        return true;
+      }
+    }
+  </script>
+
+  <div class="img"><img src="pesu_logo.png" class="image"></div>
+
+  <h2 class="h2">PES Student count Information</h2>
+
+  <table class="table">
+    <thead>
+      <th>Campuss</th>
+      <th>Course</th>
+      <th>NO. of Students</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan=2>RR</td>
+        <td>B.Tech</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>M.tech</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td rowspan=2>EC</td>
+        <td>B.Tech</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>M.tech</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <th colspan="4"> Total number of student = 1300</th>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="h2">PES student Survey Form</h2>
+  <div class="div1">
+    <form class="form" name="form1" onsubmit="condi()">
+      <label>Name</label><br>
+      <input type="text" name="myname" placeholder="Enter Your Name" size="60" required><br><br>
+      <label>Email</label><br>
+      <input type="email" name="mymail" placeholder="Enter Your email"><br><br>
+      <label>Age</label><br>
+      <input type="number" name="myage" placeholder="Enter Your age" min="16" max="30"><br><br>
+      <label>Which option best describes you?</label><br>
+      <select>
+        <option value="none" selected disabled hidden>Select Course</option>
+        <option value="BTech">B-Tech</option>
+        <option value="MTech">M-Tech</option>
+        <option value="BSc">BSc</option>
+      </select><br><br>
+      <label>Will you take up minor courses?</label><br>
+      <input type="radio" name="choice">Yes<br>
+      <input type="radio" name="choice">No <br>
+      <input type="radio" name="choice">Maybe<br>
+      <br>
+      <label>Languages and Frameworks known <i>(check all that apply)</i></label><br>
+      <input type="checkbox">C <br>
+      <input type="checkbox">C++<br>
+      <input type="checkbox">Java <br>
+      <input type="checkbox">Python <br>
+      <br>
+      <label>Any comments or suggestions</label><br>
+      <textarea cols="50" rows="5" placeholder="Enter your comments here"></textarea><br><br>
+      <input style="background-color: Green;width:100%;" type="submit" onclick="condi()" class="submit"><br><br>
+      <input style="background-color: Green;width:100%;" type="reset" class="submit">
+    </form>
+  </div>
+</body>
+
+</html>
