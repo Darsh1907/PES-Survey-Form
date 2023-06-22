@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+table {
+  border-top: 12px solid rgb(168, 166, 166);
+  border-left: 12px solid rgb(168, 166, 166);
+  border-right: 12px solid rgb(40, 40, 40);
+  border-bottom: 12px solid rgb(40, 40, 40);
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding-left: 70px;
+  padding-right: 80px;
+  text-align: center;
+}
+
+.centerTable {
+  margin: 0px auto;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:80px;
+  width:500px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 200;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+}
+
+.div1 {
+  background-color: white;
+  width: 600px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.form {
+  padding: 10px;
+}
+
+.h2{
+  padding-top : 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+}
+
+label {
+  padding: 0px 5px;
+}
+
+.submit {
+  cursor: pointer;
+}
